@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 21, 2018 at 09:18 AM
+-- Generation Time: Dec 21, 2018 at 11:12 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -25,6 +25,24 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `authentication`
+--
+
+CREATE TABLE `authentication` (
+  `username` varchar(40) NOT NULL,
+  `password` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `authentication`
+--
+
+INSERT INTO `authentication` (`username`, `password`) VALUES
+('admin', 'admin');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `databaseitem`
 --
 
@@ -42,11 +60,12 @@ CREATE TABLE `databaseitem` (
 
 INSERT INTO `databaseitem` (`no_item`, `nama_barang`, `bahan`, `stock_bahan`, `keperluan_per_item`) VALUES
 (1, 'Ring Abu', 'HD', -13000, 15),
-(2, 'Corong', 'HI PS', 2000, 10),
+(2, 'Corong', 'HI PS', 6000, 10),
 (3, 'Stick Pen Besar', 'PP', 2000, 10),
-(4, 'Tutup Diamond', 'Block', 4000, 20),
+(4, 'Tutup Diamond', 'Block', -16000, 20),
 (5, 'Tempat Makan', 'PP', 4000, 25),
-(6, 'Tutup Baru Progia', 'HD', 2000, 10);
+(6, 'Tutup Baru Progia', 'HD', 2000, 10),
+(7, 'Tutup Plastik Aqua', 'Block', 6000, 15);
 
 --
 -- Indexes for dumped tables
@@ -66,7 +85,7 @@ ALTER TABLE `databaseitem`
 -- AUTO_INCREMENT for table `databaseitem`
 --
 ALTER TABLE `databaseitem`
-  MODIFY `no_item` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `no_item` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
