@@ -3,6 +3,8 @@
    <head>
       <title>Update data stock</title>
       <h><b>Menambahkan Stock Bahan pada Database</b></h>
+   	  <a href = "halamanUtama.php">Kembali ke halaman utama</a><br />
+
       
    </head>
    
