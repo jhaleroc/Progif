@@ -21,13 +21,13 @@ if (mysqli_connect_errno()) {
 
 }
 
-// Query retrieves the student data
+// Query retrieves the data
 
 $query = "SELECT * FROM databaseitem WHERE no_item IN (1,2)";
 
-// Will hold all students retreived
+// Will hold all data retreived
 
-$student_array = array();
+$data_array = array();
 
 if($result = $dbc->query($query)){
 
@@ -40,20 +40,20 @@ if($result = $dbc->query($query)){
 
         $obj->stock_bahan, $obj->keperluan_per_item);
 
-        $temp_student = new DataDB($obj->no_item, $obj->nama_barang, $obj->bahan,
+        $temp_data = new DataDB($obj->no_item, $obj->nama_barang, $obj->bahan,
 
         $obj->stock_bahan, $obj->keperluan_per_item);
 
-        $student_array[] = $temp_student;
+        $data_array[] = $temp_data;
 
     }
 
     echo "<br /><br />";
 
     // Surround the student data
-    echo '{"students":[';
+    echo '{"data":[';
     // Take data array created and convert into JSON
-    $dale_data = json_encode($student_array[0]);
+    $dale_data = json_encode($data_array[0]);
     echo $dale_data;
     // Seperate the results
     echo ',<br />';
