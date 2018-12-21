@@ -4,7 +4,7 @@
 <title>Add Student</title>
 
 </head>
-
+<a href = "halamanUtama.php">Kembali ke halaman utama</a><br />
 <body>
 
 <form action="http://localhost/progif/newDataAdded.php" method="post">

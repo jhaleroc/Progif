@@ -5,6 +5,7 @@
       <h><b>Ketika ada PO masuk</b></h>
       <p>Dilakukan perhitungan terhadap keperluan bahan</p>
       <p>Kekurangan bahan akan ditampilkan ke user</p>
+      <a href = "halamanUtama.php">Kembali ke halaman utama</a><br />
    </head>
    
    <body>

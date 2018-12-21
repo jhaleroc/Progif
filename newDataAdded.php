@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>Add Student</title>
+<a href = "halamanUtama.php">Kembali ke halaman utama</a><br />
 </head>
 <body>
 <?php
